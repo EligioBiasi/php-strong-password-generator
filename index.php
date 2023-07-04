@@ -30,7 +30,7 @@ include_once __DIR__ . '\partials\functions.php'
 
         <div class="d-flex justify-content-center mt-2">
             <p>
-                Your new password is: <?php generatePw() ?>
+                Your new password is: <?php echo generatePw() ?>
             </p>
         </div>
     </body>
