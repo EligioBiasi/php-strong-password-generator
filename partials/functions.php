@@ -1,10 +1,7 @@
 <?php 
-
-session_start();
-
 function generatePw(){
     $password = "";
-    
+
     if (!isset($_GET['password_length'])) {
         echo "Please provide a password length";
     } else {
@@ -19,6 +16,4 @@ function generatePw(){
         }
     }
 }
-
-$_SESSION['password'] = $password
 ?>
