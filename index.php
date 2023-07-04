@@ -1,7 +1,11 @@
 <!-- Quando si apre la pagina esce un warning, se si inserisce il numero funziona tutto -->
 
 <?php
+session_start();
+
 include_once __DIR__ . '\partials\functions.php'
+
+
 ?>
 
 <!DOCTYPE html>
@@ -20,17 +24,12 @@ include_once __DIR__ . '\partials\functions.php'
             Password generator
         </h1>
         <div class="d-flex justify-content-center mt-4">
-            <form action="./index.php" method="GET">
+            <form action="./password.php" method="GET">
                 <div class="mb-3">
                     <input type="text" class="form-control" name="password_length">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
-        <div class="d-flex justify-content-center mt-2">
-            <p>
-                Your new password is: <?php echo generatePw() ?>
-            </p>
         </div>
     </body>
 </html>
