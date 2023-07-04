@@ -2,13 +2,14 @@
 function generatePw(){
     $password_length = $_GET['password_length'];
     $password = "";
+
     if(!ctype_digit($password_length)){
         echo "Please insert a number";
     }else{
         for($i = 0; $i < $password_length; $i++) {
-            $pw .= chr(rand(32, 126));
+            $password .= chr(rand(32, 126));
           }
-          return $pw;
+          return $password;
     }
 }
 
@@ -35,6 +36,11 @@ function generatePw(){
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+        </div>
+        <div>
+            <p>
+                La tua nuova password è: <?php echo generatePw() ?>
+            </p>
         </div>
     </body>
 </html>
