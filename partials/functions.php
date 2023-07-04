@@ -1,4 +1,7 @@
 <?php 
+
+session_start();
+
 function generatePw(){
     $password = "";
     
@@ -16,4 +19,6 @@ function generatePw(){
         }
     }
 }
+
+$_SESSION['password'] = $password
 ?>

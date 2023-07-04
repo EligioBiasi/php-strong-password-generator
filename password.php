@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,7 @@
     <body>
     <div class="d-flex justify-content-center mt-2">
             <p>
-                Your new password is: <?php  ?>
+                Your new password is: <?php $_SESSION['password'] = $password ?>
             </p>
         </div>
     </body>

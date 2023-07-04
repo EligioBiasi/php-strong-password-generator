@@ -1,11 +1,7 @@
 <!-- Quando si apre la pagina esce un warning, se si inserisce il numero funziona tutto -->
 
 <?php
-session_start();
-
 include_once __DIR__ . '\partials\functions.php'
-
-
 ?>
 
 <!DOCTYPE html>
