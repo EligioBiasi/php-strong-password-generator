@@ -1,8 +1,7 @@
 <?php 
 function generatePw(){
-    $password_length = $_GET['password_length'];
     $password = "";
-
+    
     if (!isset($_GET['password_length'])) {
         echo "Please provide a password length";
     } else {
