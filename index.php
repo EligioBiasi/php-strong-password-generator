@@ -1,24 +1,7 @@
-<?php 
-function generatePw(){
-    $password_length = $_GET['password_length'];
-    $password = "";
+<!-- Quando si apre la pagina esce un warning, se si inserisce il numero funziona tutto -->
 
-    if (!isset($_GET['password_length'])) {
-        echo "Please provide a password length";
-    } else {
-        $password_length = $_GET['password_length'];
-        if(!ctype_digit($password_length)){
-            echo "Please insert a number";
-        }else{
-            for($i = 0; $i < $password_length; $i++) {
-                $password .= chr(rand(32, 126));
-              }
-              return $password;
-        }
-    }
-
-}
-
+<?php
+include_once __DIR__ . '\partials\functions.php'
 ?>
 
 <!DOCTYPE html>
